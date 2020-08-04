@@ -1,0 +1,51 @@
+{
+  "name": "VNRec",
+  "version": "1.0.0",
+  "description": "Visual Novel Recommender System",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node .",
+    "build": "rm -rf build && tsc",
+    "dev": "NODE_ENV=development node .",
+    "watch": "tsc-watch --onSuccess \"npm run dev\"",
+    "test": "NODE_ENV=test jest",
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PragunSaini/VNRec.git"
+  },
+  "keywords": [
+    "vndb",
+    "visual novels",
+    "recsys"
+  ],
+  "author": "Pragun Saini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PragunSaini/VNRec/issues"
+  },
+  "homepage": "https://github.com/PragunSaini/VNRec#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/jest": "^26.0.8",
+    "@types/node": "^14.0.27",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.2.2",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.4",
+    "ts-node": "^8.10.2",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
